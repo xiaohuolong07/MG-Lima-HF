@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --verde: #62c44c;
+    --azul: #00b4ef;
+    --texto: #2d3036;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+	list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e6e5e6;
+}
+
+    /* PROPS */
+
+p {
+    font-size: 1.4rem;
+}
+
+.mg-t {
+    margin-top: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+    /* Nav-bar */
+
+header {
+    top: 0; left: 0; right: 0;
+    background: rgb(255, 255, 255);
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    width: 140px;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: var(--texto);
+    display: block;
+    height: 100%;
+    font-weight: bold;
+}
+
+header .navbar ul li a:hover {
+    background-color: var(--texto);
+    color: white;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: white;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: var(--texto);
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+}
+
+    /* Company phrase with bg */
+
+.company-phrase-bg-image {
+    display: flex;
+    background-image: url(./br101.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 380px 0;
+    /* padding: 370px 0; */
+    justify-content: center;
+}
+
+.company-phrase-bg-image h2 {
+    width: 90%;
+    color: white;
+    text-align: center;
+}
+
+    /* About company */
+
+.about-company-texts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about-company-texts > p {
+    width: 90%;
+    color: var(--texto);
+}
+
+.heading-about-company {
+    font-size: 3rem;
+    color: var(--texto);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+    /* Ideal cards */
+
+.ideals-heading {
+    text-align: center;
+}
+
+#ideal-cards {
+    margin: 50px 20px;
+    border-radius: 15px;
+    color: var(--texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideal-card01 {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.264);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.268);
+    box-shadow: 0px 0px 32px -6px rgba(0, 0, 0, 0.278);
+}
+
+.ideal-image-heading-card01 {
+    display: flex;
+    align-items: center;
+}
+
+.ideal-image-heading-card01 h3 {
+    color: var(--verde);
+}
+
+.ideal-card02 {
+    margin: 0 25px;
+
+}
+
+.ideal-image-heading-card02 h3 {
+    color: var(--azul);
+}
+
+.ideal-image-heading-card01 > h3 {
+    margin-left: 20px;
+}
+
+.missao:hover, .valores:hover {
+    background-color: #356c2a;
+}
+
+.visao:hover {
+    background-color: #047195;
+}
+
+.missao:hover h3, .valores:hover h3, .missao:hover, .valores:hover, .visao:hover h3, .visao:hover {
+    color: white;
+}
+
+    /* Services */
+
+#services {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.coleta {
+    margin-left: 25px;
+}
+
+    /* Background image phrase */
+
+#bg-image-phrase {
+    display: flex;
+    background-image: url(./bgimage02.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    padding: 300px 0;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+    /* Contact */
+
+#contact {
+    margin-bottom: 75px;
+}
+
+.contact-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-headline h1 {
+    text-align: center;
+    color: var(--texto);
+    font-size: 2.5rem;
+}
+
+.contact-headline p {
+    text-align: center;
+    width: 900px;
+    margin-top: 5px;
+}
+
+.contact-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-images-logo {
+    margin: 15px 0;
+    width: 120px;
+}
+
+.contact-whatsapp, .contact-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.contact-whatsapp h1, .contact-instagram h1 {
+    font-size: 1.8rem !important;
+}
+
+.contact-instagram {
+    margin-left: 100px;
+}
+
+.contact-whatsapp p, .contact-instagram p {
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1d1d1d;
+    padding: 50px 20px 70px 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+
+.whatsapp-footer-logo {
+    width: 50px !important;
+    border-radius: 100%;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.nav-footer a, .terms-and-policy a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.terms-and-policy {
+    margin: 10px 0;
+}
+
+.footer-email-city {
+    margin-bottom: 10px;
+}
+
+.footer-email-city p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem !important;
+}
+
+.footere-city {
+    margin: 10px 0;
+}
+
+/* Media */
+
+@media(max-width: 991px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100px; left: 0; right: 0;
+        background: white;
+        border-top: 1px solid var(--texto);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: rgb(210, 210, 210);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+@media (max-width: 1000px) {
+    #services {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .coleta {
+        margin: 30px 0 0 0;
+    }
+
+    #ideal-cards {
+        flex-direction: column;
+    }
+
+    .ideal-card02 {
+        margin: 30px 0 !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .company-phrase-bg-image {
+        padding: 370px 0;
+    }
+
+    .ideal-card01 {
+        width: 100%;
+    }
+}
+
+/* Contact */
+
+@media (max-width: 820px) {
+    .contact-headline h1, .contact-headline p {
+        padding: 0 20px;
+    }
+    
+    .contact-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-instagram {
+        margin: 30px 0;
+    }
+
+    .contact-whatsapp h1, .contact-instagram h1 {
+        font-size: 2.7rem !important;
+    }
+
+    .contact-whatsapp, .contact-instagram {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-whatsapp, .contact-instagram {
+        width: 90%;
+    }
+}
+
+@media (max-width: 996px) {
+    .contact-headline p {
+        width: 90%;
+    }
+}
