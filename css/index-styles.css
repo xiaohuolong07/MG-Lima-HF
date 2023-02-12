@@ -452,7 +452,7 @@ footer {
 @media (max-width: 1000px) {
     .right-content-cards {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         align-items: flex-start;
     }
 
@@ -474,6 +474,8 @@ footer {
         margin: 20px 0;
         flex-direction: row;
         justify-content: center;
+        border-top: 2px solid darkgray;
+        border-bottom: 2px solid darkgray;
     }
 
     .vision-card p {
@@ -514,6 +516,7 @@ footer {
     .vision-icon {
         width: 120px;
     }
+
 }
 
 @media (max-width: 580px) {
