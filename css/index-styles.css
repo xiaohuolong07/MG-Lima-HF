@@ -183,10 +183,6 @@ header label {
     width: 150px;
 }
 
-.mission-card h1 {
-    font-size: 3rem;
-}
-
 /* Vision card */
 .vision-card {
     margin: 0 20px;
@@ -201,8 +197,13 @@ header label {
     width: 180px;
 }
 
-.vision-card h1 {
+.vision-card h1, .value-card h1, .mission-card h1 {
     font-size: 3rem;
+    color: var(--texto) !important;
+}
+
+.vision-icon, .mission-icon, .value-icon {
+    filter: invert(20%)
 }
 
 /* Value */
@@ -218,10 +219,6 @@ header label {
 
 .value-icon {
     width: 150px;
-}
-
-.value-card h1 {
-    font-size: 3rem;
 }
 
     /* Background image phrase */
