@@ -20,6 +20,13 @@ body {
     background-color: #e6e5e6;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
     /* PROPS */
 
 p {
@@ -567,12 +574,4 @@ footer {
     .value-card p, .vision-card p, .mission-card p {
         width: 250px;
     }
-}
-
-
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
 }
