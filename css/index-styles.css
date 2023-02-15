@@ -134,10 +134,9 @@ header label {
 }
 
 .heading-about-company {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--texto);
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
     /* Ideal cards */
@@ -149,6 +148,7 @@ header label {
 .ideals-heading {
     text-align: center;
     font-size: 4rem !important;
+    margin-bottom: 20px;
 }
 
 .all-ideal {
@@ -235,6 +235,12 @@ header label {
     color: white;
     font-size: 2rem;
     text-align: center;
+}
+
+    /* Services */
+
+#services {
+    margin: 0 0 50px 0;
 }
 
     /* Contact */
@@ -387,17 +393,6 @@ footer {
     }
 }
 
-@media (max-width: 1000px) {
-    #services {
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .coleta {
-        margin: 30px 0 0 0;
-    }
-}
-
 @media (max-width: 470px) {
     .company-phrase-bg-image {
         padding: 370px 0;
@@ -417,7 +412,7 @@ footer {
     }
 
     .contact-instagram {
-        margin: 30px 0;
+        margin: 30px 0 0 0;
     }
 
     .contact-whatsapp h1, .contact-instagram h1 {
