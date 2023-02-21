@@ -155,7 +155,7 @@ header label {
 .ideals-heading {
     text-align: center;
     font-size: 4rem !important;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .all-ideal {
@@ -251,6 +251,25 @@ header label {
     margin: 0 0 50px 0;
 }
 
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-up {
+    display: flex;
+}
+
+.services-up p {
+    margin-left: 40px;
+    width: 550px;
+}
+
+.services-image {
+    width: 400px;
+}
+
     /* Contact */
 
 #contact {
@@ -278,7 +297,8 @@ header label {
 .contact-images {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 40px 20px 0;
 }
 
 .contact-images-logo {
@@ -300,14 +320,19 @@ header label {
 
 .contact-whatsapp h1, .contact-instagram h1 {
     font-size: 1.8rem !important;
+    color: var(--texto);
 }
 
 .contact-instagram {
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 .contact-whatsapp p, .contact-instagram p {
     text-align: center;
+}
+
+.contact-email p {
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -409,7 +434,7 @@ footer {
 
 /* Contact */
 
-@media (max-width: 820px) {
+@media (max-width: 1030px) {
     .contact-headline h1, .contact-headline p {
         padding: 0 20px;
     }
@@ -428,19 +453,25 @@ footer {
     }
 
     .contact-whatsapp, .contact-instagram {
-        width: 70%;
+        width: 50%;
     }
 }
 
 @media (max-width: 450px) {
     .contact-whatsapp, .contact-instagram {
-        width: 90%;
+        width: 90% !important;
     }
 }
 
 @media (max-width: 996px) {
     .contact-headline p {
         width: 90%;
+    }
+}
+
+@media (max-width: 820px) {
+    .contact-whatsapp, .contact-instagram {
+        width: 400px;
     }
 }
 
@@ -533,7 +564,7 @@ footer {
 
     .ideals-heading {
         font-size: 2.5rem !important;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .mg-lima-logo-cards {
@@ -573,5 +604,37 @@ footer {
 @media (max-width: 340px) {
     .value-card p, .vision-card p, .mission-card p {
         width: 250px;
+    }
+}
+
+/* Services */
+
+@media (max-width: 1060px) {
+    .services-image {
+        width: 300px !important;
+    }
+
+    .services-up p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .services-up {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .services-up p {
+        width: 90%;
+        text-align: center;
+        margin: 20px 0 0 0;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 396px) {
+    .services-image {
+        width: 90% !important;
     }
 }
